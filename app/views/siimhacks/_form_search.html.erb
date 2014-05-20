@@ -1,0 +1,15 @@
+<div><form class="form-search" action="<%= url_for(:action => :index) %>">
+
+
+<table>
+<tbody>
+<tr><td><input type="text" name="apikey" placeholder="enter apikey" /><td>
+<select name="vendor">
+  <option value="agfa">AGFA QIDO-RS</option>
+  <option value="mckesson" <%= 'selected' if @vendor == "mckesson" %>>McKesson QIDO-RS</option>
+</select>
+</td><td><button type="submit" id="save" class="btn btn-success">Query</button></td></tr>
+</tbody></table>
+
+</form>
+</div>

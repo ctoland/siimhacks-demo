@@ -1,0 +1,8 @@
+<form id="bulk-form" method="post" action="<%= url_for(:controller => :siimhacks, :action => :send_fhir) %>">
+<div>
+  <textarea name="json" style="width:80%; height:400px" placeholder="Enter a json message to send to FHIR"></textarea>
+</div>
+<div>
+<button id="bulk-export-btn" type="submit" class="btn">Send</button>
+</div>
+</form>
